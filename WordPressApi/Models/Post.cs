@@ -1,5 +1,4 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace WordPressApi.Models
 {
@@ -11,8 +10,8 @@ namespace WordPressApi.Models
     [JsonProperty("id")]
     public long Id { get; set; }
     [JsonProperty("title")]
-    public string Title { get; set; }
+    public Rendered Title { get; set; }
     [JsonProperty("content")]
-    public string Content { get; set; }
+    public Rendered Content { get; set; }
   }
 }

@@ -2,6 +2,9 @@
 
 namespace WordPressApi.Services
 {
+  /// <summary>
+  /// Construct WordPress services
+  /// </summary>
   public class WordPressServiceFactory
   {
     /// <returns>WordPressService instance</returns>

@@ -9,8 +9,9 @@ namespace WordPressApi.Models
   {
     [JsonProperty("id")]
     public long Id { get; set; }
-
     [JsonProperty("media_type")]
     public string MediaType { get; set; }
+    [JsonProperty("title")]
+    public Rendered Title { get; set; }
   }
 }

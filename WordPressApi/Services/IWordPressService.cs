@@ -16,5 +16,13 @@ namespace WordPressApi.Services
     /// <returns>Lijst met categorieën</returns>
     [Get("/wp-json/wp/v2/categories")]
     IObservable<IEnumerable<Category>> GetCategories();
+
+    /// <summary>
+    /// Posts voor category ophalen
+    /// </summary>
+    /// <returns>De category posts.</returns>
+    /// <param name="categoryId">Category id</param>
+    [Get("/wp-json/wp/v2/posts")]
+    IObservable<IEnumerable<Post>> GetCategoryPosts([AliasAs("categories")] long categoryId);
   }
 }
