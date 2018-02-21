@@ -6,21 +6,21 @@ using WordPressApi.Models;
 namespace WordPressApi.Services
 {
   /// <summary>
-  /// WordPress JSON REST API definitie
+  /// WordPress JSON REST API
   /// </summary>
   public interface IWordPressService
   {
     /// <summary>
-    /// Lijst met categorieën ophalen uit WP
+    /// Fetch all categories from WP
     /// </summary>
-    /// <returns>Lijst met categorieën</returns>
+    /// <returns>List with categories</returns>
     [Get("/wp-json/wp/v2/categories")]
     IObservable<IEnumerable<Category>> GetCategories();
 
     /// <summary>
-    /// Posts voor category ophalen
+    /// Fetches all posts for a specific category
     /// </summary>
-    /// <returns>De category posts.</returns>
+    /// <returns>The category posts.</returns>
     /// <param name="categoryId">Category id</param>
     [Get("/wp-json/wp/v2/posts")]
     IObservable<IEnumerable<Post>> GetCategoryPosts([AliasAs("categories")] long categoryId);

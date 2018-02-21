@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace WordPressApi.Models
 {
   /// <summary>
-  /// Gerenderde property
+  /// Pre-rendered property (WP API pre-renders titles etc)
   /// </summary>
   public class Rendered
   {
