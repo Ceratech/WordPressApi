@@ -36,6 +36,8 @@
   <ItemGroup>
     <Compile Include="Models\RenderedTest.cs" />
     <Compile Include="Models\CategoryTest.cs" />
+    <Compile Include="Models\PostTest.cs" />
+    <Compile Include="Models\AttachmentTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

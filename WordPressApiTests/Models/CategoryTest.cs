@@ -1,5 +1,4 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using NUnit.Framework;
 using WordPressApi.Models;
 
@@ -18,7 +17,7 @@ namespace WordPressApiTests.Models
     [Test()]
     public void TestDeserialize()
     {
-      var obj = JsonConvert.DeserializeObject<Category>(json);      
+      var obj = JsonConvert.DeserializeObject<Category>(json);
 
       Assert.IsNotNull(obj);
       Assert.AreEqual(1234, obj.Id);
