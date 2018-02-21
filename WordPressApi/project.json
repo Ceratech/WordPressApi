@@ -1,6 +1,5 @@
 ﻿{
   "dependencies": {
-    "Autofac": "4.6.2",
     "NETStandard.Library": "2.0.1",
     "Newtonsoft.Json": "11.0.1",
     "Refit": "4.3.0",

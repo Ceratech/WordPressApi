@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v1.5": {
-      "Autofac/4.6.2": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.0",
-          "System.ComponentModel": "4.0.1"
-        },
-        "compile": {
-          "lib/netstandard1.1/Autofac.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/Autofac.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.WebUtilities/1.1.2": {
         "type": "package",
         "dependencies": {
@@ -1362,19 +1349,6 @@
     }
   },
   "libraries": {
-    "Autofac/4.6.2": {
-      "sha512": "wKI7F6+n45gqfq0T8FuB3hFzaCkuegiFo5in6uB1y2Ai9ZYcjue8yqk3yzyNEwBDS7AyvlTUGSoNovwpUuKqTw==",
-      "type": "package",
-      "path": "autofac/4.6.2",
-      "files": [
-        "autofac.4.6.2.nupkg.sha512",
-        "autofac.nuspec",
-        "lib/net45/Autofac.dll",
-        "lib/net45/Autofac.xml",
-        "lib/netstandard1.1/Autofac.dll",
-        "lib/netstandard1.1/Autofac.xml"
-      ]
-    },
     "Microsoft.AspNetCore.WebUtilities/1.1.2": {
       "sha512": "8j+1rkTQ47lzUKpH3O2Odt3f6YdYcfnY8hpVG14riZaqEfuO+n+CjZPTYh/3mbQ0+ZhT/3JqUD9gHP3gIGZ0PQ==",
       "type": "package",
@@ -5277,7 +5251,6 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Autofac >= 4.6.2",
       "NETStandard.Library >= 2.0.1",
       "Newtonsoft.Json >= 11.0.1",
       "Refit >= 4.3.0",
@@ -5304,7 +5277,6 @@
       }
     },
     "dependencies": {
-      "Autofac": "4.6.2",
       "NETStandard.Library": "2.0.1",
       "Newtonsoft.Json": "11.0.1",
       "Refit": "4.3.0",
